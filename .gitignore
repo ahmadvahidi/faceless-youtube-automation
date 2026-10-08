@@ -1,0 +1,11 @@
+# Secrets — never commit
+.env
+
+# Outputs & intermediates
+out/
+work/
+assets/
+
+# Python
+__pycache__/
+*.pyc
