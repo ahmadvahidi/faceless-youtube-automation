@@ -8,6 +8,14 @@ script with an LLM → voices it (edge-tts, free) → adds cinematic camera moti
 captions (FFmpeg zoompan + PIL) → sends the finished video + title/description to
 a Telegram group where your uploader bot pushes it to YouTube.
 
+## It runs in production
+
+The pipeline powers **[DOPEAK](https://www.youtube.com/@wearedopeak)** — 120 videos
+produced, rendered and uploaded end to end with no manual editing, on a single VPS,
+using only free APIs (edge-tts for voice, Google Trends for topics).
+
+Running cost: one small VPS. No paid TTS, no paid stock footage, no editing time.
+
 ## Features
 
 - **Trend-driven topics** — pulls live Google Trends, filters to the high-RPM
