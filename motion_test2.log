@@ -1,0 +1,12 @@
+[motion] hook card scene_99002_000.mp4 (2.40s, 1080x1920)
+[active] chart_stock_p2.mp4: animation ends at 8.9s of 14.3s
+[sync] animation 8.9s stretched x0.36 to fill 3.2s of narration
+[sync] animation 8.9s stretched x0.49 to fill 4.4s of narration
+[active] chart_compare_p2.mp4: animation ends at 6.5s of 12.2s
+[sync] animation 6.5s stretched x0.71 to fill 4.6s of narration
+[sync] animation 6.5s stretched x0.75 to fill 4.8s of narration
+[sync] animation 6.5s stretched x0.76 to fill 5.0s of narration
+[active] chart_compounding_p2.mp4: animation ends at 10.5s of 15.6s
+[sync] animation 10.5s stretched x0.41 to fill 4.3s of narration
+[sync] animation 10.5s stretched x0.39 to fill 4.1s of narration
+OK /opt/data/workspace/faceless-youtube/out/video_99002.mp4

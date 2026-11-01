@@ -9,3 +9,9 @@ assets/
 # Python
 __pycache__/
 *.pyc
+
+# Live credentials / tokens (never commit)
+*_token.json
+analytics_token.json
+*.bak
+*.bak.*

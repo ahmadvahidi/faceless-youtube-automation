@@ -1,0 +1,29 @@
+{
+ "history": [
+  "chart",
+  "burst",
+  "stamp",
+  "split",
+  "poster",
+  "bignum",
+  "poster",
+  "bignum",
+  "chart",
+  "split",
+  "stamp",
+  "burst",
+  "bignum",
+  "chart",
+  "poster",
+  "burst",
+  "stamp"
+ ],
+ "counts": {
+  "chart": 3,
+  "burst": 3,
+  "stamp": 3,
+  "split": 2,
+  "poster": 3,
+  "bignum": 3
+ }
+}
