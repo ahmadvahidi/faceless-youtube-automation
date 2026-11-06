@@ -19,6 +19,7 @@ Usage: python upgrade_longform_motion.py [--limit N] [--dry]
 """
 import json
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -121,9 +122,14 @@ def live_motion(vid):
 
 
 def _too_short(path, floor=6.0):
-    """True when the cached fragment is shorter than the gate can measure."""
+    """True when the cached fragment is shorter than the gate can measure.
+
+    ffprobe lives in /usr/local/bin here, NOT /usr/bin — the hardcoded path silently raised,
+    `_too_short` returned False, a stale 5 s stub was trusted and the live reading came back
+    -1.00 (a measurement failure that reads like STATIC). Resolve it from PATH.
+    """
     try:
-        r = subprocess.run(["/usr/bin/ffprobe", "-v", "error", "-show_entries",
+        r = subprocess.run([shutil.which("ffprobe") or "ffprobe", "-v", "error", "-show_entries",
                             "format=duration", "-of",
                             "default=nw=1:nk=1", str(path)],
                            capture_output=True, text=True)

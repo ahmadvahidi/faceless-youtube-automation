@@ -16,14 +16,20 @@
   "chart",
   "poster",
   "burst",
-  "stamp"
+  "stamp",
+  "split",
+  "poster",
+  "burst",
+  "stamp",
+  "bignum",
+  "chart"
  ],
  "counts": {
-  "chart": 3,
-  "burst": 3,
-  "stamp": 3,
-  "split": 2,
-  "poster": 3,
-  "bignum": 3
+  "chart": 4,
+  "burst": 4,
+  "stamp": 4,
+  "split": 3,
+  "poster": 4,
+  "bignum": 4
  }
 }

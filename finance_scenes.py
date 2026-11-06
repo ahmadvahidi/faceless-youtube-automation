@@ -180,6 +180,43 @@ class InflationVsCash(Scene):
         self.wait(1.5)
 
 
+class InflationVsCashDE(Scene):
+    """Beat 4 of the German inflation short: 10.000 € cash vs. 4 % prices, 12 months.
+
+    Separate from InflationVsCash on purpose: that one is hard-wired to English
+    labels and dollars over a 20-year horizon and is used by already shipped
+    videos. Same helpers, but every position is anchored to data coordinates
+    (axes.c2p) because the y-range here is measured in thousands.
+    """
+    def construct(self):
+        _bg(self); _brand(self)
+        _title(self, "Kaufkraft")
+        axes = _axes(self, [0, 12, 3], [9000, 10500, 500])
+        xunit = Text("Monate", font_size=22, color=GREY, font=MONO)
+        xunit.next_to(axes, DOWN, buff=0.10).align_to(axes, RIGHT)
+        yunit = Text("€", font_size=24, color=GREY, font=MONO)
+        yunit.next_to(axes, LEFT, buff=0.12).align_to(axes, UP)
+        self.play(FadeIn(xunit), FadeIn(yunit), run_time=0.6)
+
+        cash = axes.plot(lambda x: 10000, color=YELLOW, x_range=[0, 12], stroke_width=5)
+        prices = axes.plot(lambda x: 10000 * 1.04 ** (x / 12), color=RED,
+                           x_range=[0, 12], stroke_width=5)
+        self.play(Create(glow(cash, YELLOW)), run_time=1.4)
+        self.play(Create(glow(prices, RED)), run_time=2.2)
+        self.add(axes.get_area(prices, x_range=[0, 12], color=RED, opacity=0.16))
+
+        cl = Text("10.000 €", font_size=27, color=YELLOW, font=MONO, weight=BOLD)
+        cl.next_to(axes.c2p(6, 10000), DOWN, buff=0.30)
+        pl = Text("10.400 €", font_size=27, color=RED, font=MONO, weight=BOLD)
+        pl.next_to(axes.c2p(11.4, 10000 * 1.04 ** (11.4 / 12)), UL, buff=0.22)
+        self.play(Write(cl), Write(pl), run_time=0.9)
+        gap = Text("−1,4 % Kaufkraft in 12 Monaten", font_size=32, color=WHITE,
+                   font=MONO, weight=BOLD).next_to(axes, DOWN, buff=0.72)
+        self.play(Write(gap), run_time=1.2)
+        self.wait(4.0)
+        self.wait(1.5)
+
+
 class Diversification(Scene):
     def construct(self):
         _bg(self); _brand(self)
@@ -262,6 +299,7 @@ GRAPHIC_SCENES = {
     "compounding": CompoundingCurve,
     "stock": StockMarket,
     "inflation": InflationVsCash,
+    "inflation_de": InflationVsCashDE,
     "diversify": Diversification,
     "compare": ActiveVsPassive,
     "tax": TaxDrag,

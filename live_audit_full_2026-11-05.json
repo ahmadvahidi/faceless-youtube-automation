@@ -1,0 +1,1210 @@
+{
+ "at": "2026-11-05T18:03:10Z",
+ "n": 177,
+ "known": {
+  "AZtOTT5D0Ws": {
+   "id": "AZtOTT5D0Ws",
+   "title": "Binary Search in 5 Guesses",
+   "published": "2026-11-04",
+   "dur": 14,
+   "motion": 45.96,
+   "verdict": "ok"
+  },
+  "xpGnwaJdRb8": {
+   "id": "xpGnwaJdRb8",
+   "title": "Pythagoras, Proven With Squares",
+   "published": "2026-11-04",
+   "dur": 52,
+   "motion": 32.57,
+   "verdict": "ok"
+  },
+  "dms1VWDJnAw": {
+   "id": "dms1VWDJnAw",
+   "title": "Fibonacci: The Sequence Nature Keeps Reusing",
+   "published": "2026-11-04",
+   "dur": 45,
+   "motion": 20.33,
+   "verdict": "ok"
+  },
+  "rr46aK2d8xY": {
+   "id": "rr46aK2d8xY",
+   "title": "What causes a stock surge to become a crash",
+   "published": "2026-11-02",
+   "dur": 18,
+   "motion": 48.33,
+   "verdict": "ok"
+  },
+  "NgszWrJ2-o8": {
+   "id": "NgszWrJ2-o8",
+   "title": "The Numbers You Cannot Break Apart",
+   "published": "2026-11-02",
+   "dur": 45,
+   "motion": 23.23,
+   "verdict": "ok"
+  },
+  "ip0B8Vgmb9I": {
+   "id": "ip0B8Vgmb9I",
+   "title": "Counting Past Infinity",
+   "published": "2026-11-01",
+   "dur": 47,
+   "motion": 23.64,
+   "verdict": "ok"
+  },
+  "D6jxuA8gAnA": {
+   "id": "D6jxuA8gAnA",
+   "title": "Why Artists Chose 1.618",
+   "published": "2026-10-31",
+   "dur": 40,
+   "motion": 23.08,
+   "verdict": "ok"
+  },
+  "zqTzDYn32uw": {
+   "id": "zqTzDYn32uw",
+   "title": "What turns a data breach into a network graph?",
+   "published": "2026-10-25",
+   "dur": 22,
+   "motion": 43.91,
+   "verdict": "ok"
+  },
+  "nA2fR4SxMdY": {
+   "id": "nA2fR4SxMdY",
+   "title": "Why a Xbox Game Pass beats buying games individually",
+   "published": "2026-10-25",
+   "dur": 23,
+   "motion": 49.21,
+   "verdict": "ok"
+  },
+  "wNX-00knkSc": {
+   "id": "wNX-00knkSc",
+   "title": "Three Averages, Three Different Answers",
+   "published": "2026-10-25",
+   "dur": 40,
+   "motion": 25.06,
+   "verdict": "ok"
+  },
+  "B_6swjaGJ-U": {
+   "id": "B_6swjaGJ-U",
+   "title": "3-4-5: The Triangle Builders Trust",
+   "published": "2026-10-25",
+   "dur": 46,
+   "motion": 23.55,
+   "verdict": "ok"
+  },
+  "BI18pLnR5zQ": {
+   "id": "BI18pLnR5zQ",
+   "title": "What turns a soccer match into a probability curve?",
+   "published": "2026-10-24",
+   "dur": 26,
+   "motion": 46.37,
+   "verdict": "ok"
+  },
+  "o5NVxfYU4ns": {
+   "id": "o5NVxfYU4ns",
+   "title": "The Fibonacci Sequence and the Golden Ratio",
+   "published": "2026-10-24",
+   "dur": 45,
+   "motion": 23.85,
+   "verdict": "ok"
+  },
+  "29RMXs20hkw": {
+   "id": "29RMXs20hkw",
+   "title": "The flip that decides whether a soccer ball rolls or bounces",
+   "published": "2026-10-23",
+   "dur": 22,
+   "motion": 49.57,
+   "verdict": "ok"
+  },
+  "Rpo30srCunA": {
+   "id": "Rpo30srCunA",
+   "title": "3 numbers that shape Social Security 2032",
+   "published": "2026-10-22",
+   "dur": 18,
+   "motion": 47.4,
+   "verdict": "ok"
+  },
+  "GfbQV2uAkOI": {
+   "id": "GfbQV2uAkOI",
+   "title": "Why a traffic peak still beats smarter routing",
+   "published": "2026-10-22",
+   "dur": 20,
+   "motion": 47.42,
+   "verdict": "ok"
+  },
+  "WlNGKn0R4ao": {
+   "id": "WlNGKn0R4ao",
+   "title": "How a Nasdaq dip fuels a ripple in everyday prices?",
+   "published": "2026-10-22",
+   "dur": 19,
+   "motion": 52.08,
+   "verdict": "ok"
+  },
+  "Vs6v3XeJPio": {
+   "id": "Vs6v3XeJPio",
+   "title": "Why Every Circle Hides the Same Number",
+   "published": "2026-10-21",
+   "dur": 21,
+   "motion": 52.5,
+   "verdict": "ok"
+  },
+  "iBwN3IiuJCk": {
+   "id": "iBwN3IiuJCk",
+   "title": "What turns a coffee line into a math problem?",
+   "published": "2026-10-21",
+   "dur": 18,
+   "motion": 49.64,
+   "verdict": "ok"
+  },
+  "WsIiTEV2E60": {
+   "id": "WsIiTEV2E60",
+   "title": "What is a salary luxury tax, really?",
+   "published": "2026-10-21",
+   "dur": 18,
+   "motion": 44.42,
+   "verdict": "ok"
+  },
+  "21X1n7h9fpk": {
+   "id": "21X1n7h9fpk",
+   "title": "What beats a courtroom backlog: Judge Judy's timing",
+   "published": "2026-10-21",
+   "dur": 18,
+   "motion": 46.64,
+   "verdict": "ok"
+  },
+  "ArHDUUD9ShM": {
+   "id": "ArHDUUD9ShM",
+   "title": "What turns a tennis serve into a winning ace?",
+   "published": "2026-10-21",
+   "dur": 20,
+   "motion": 48.05,
+   "verdict": "ok"
+  },
+  "FwLECOh2nqM": {
+   "id": "FwLECOh2nqM",
+   "title": "Why Prime Numbers Matter",
+   "published": "2026-10-21",
+   "dur": 45,
+   "motion": 22.21,
+   "verdict": "ok"
+  },
+  "nAD25BSX0lo": {
+   "id": "nAD25BSX0lo",
+   "title": "How Big Is Infinity, Really?",
+   "published": "2026-10-21",
+   "dur": 47,
+   "motion": 20.39,
+   "verdict": "ok"
+  },
+  "KThFEJGP7yQ": {
+   "id": "KThFEJGP7yQ",
+   "title": "What Is a Derivative, Really?",
+   "published": "2026-10-21",
+   "dur": 14,
+   "motion": 43.97,
+   "verdict": "ok"
+  },
+  "73S-Tj9LZp4": {
+   "id": "73S-Tj9LZp4",
+   "title": "3 ways Powerball odds surprise you",
+   "published": "2026-10-21",
+   "dur": 13,
+   "motion": 51.2,
+   "verdict": "ok"
+  },
+  "pTuYPq9n3ls": {
+   "id": "pTuYPq9n3ls",
+   "title": "What 3 math tricks stop ticket scalpers?",
+   "published": "2026-10-20",
+   "dur": 25,
+   "motion": 47.12,
+   "verdict": "ok"
+  },
+  "rCuxrMcSTzU": {
+   "id": "rCuxrMcSTzU",
+   "title": "What 4 factors decide midterm power shifts",
+   "published": "2026-10-20",
+   "dur": 13,
+   "motion": 51.88,
+   "verdict": "ok"
+  },
+  "p13xM455B-c": {
+   "id": "p13xM455B-c",
+   "title": "Percentages, Done Right",
+   "published": "2026-10-20",
+   "dur": 45,
+   "motion": 25.82,
+   "verdict": "ok"
+  },
+  "WVR4AtfBshw": {
+   "id": "WVR4AtfBshw",
+   "title": "How 2 snake traits keep Puerto Rico jungles safe",
+   "published": "2026-10-20",
+   "dur": 16,
+   "motion": 52.26,
+   "verdict": "ok"
+  },
+  "S6-l9OGaM2s": {
+   "id": "S6-l9OGaM2s",
+   "title": "3 ways a jetstream twist wrecks flights?",
+   "published": "2026-10-20",
+   "dur": 15,
+   "motion": 50.72,
+   "verdict": "ok"
+  },
+  "1qKmJY3RIG8": {
+   "id": "1qKmJY3RIG8",
+   "title": "The Number That Almost Didn't Exist",
+   "published": "2026-10-20",
+   "dur": 43,
+   "motion": 21.5,
+   "verdict": "ok"
+  },
+  "uCc7auaSEO8": {
+   "id": "uCc7auaSEO8",
+   "title": "The Unit Circle, Animated",
+   "published": "2026-10-20",
+   "dur": 25,
+   "motion": 27.3,
+   "verdict": "ok"
+  },
+  "2ExW1FMO3Eo": {
+   "id": "2ExW1FMO3Eo",
+   "title": "What three signs a GTA VI traffic jam hides",
+   "published": "2026-10-19",
+   "dur": 23,
+   "motion": 47.51,
+   "verdict": "ok"
+  },
+  "JtR6NmpiyXs": {
+   "id": "JtR6NmpiyXs",
+   "title": "Why 4 rules keep the Dow stable",
+   "published": "2026-10-19",
+   "dur": 22,
+   "motion": 46.6,
+   "verdict": "ok"
+  },
+  "EpMnlIpfQfM": {
+   "id": "EpMnlIpfQfM",
+   "title": "How 2 math tricks boost Amazon stock returns",
+   "published": "2026-10-19",
+   "dur": 21,
+   "motion": 49.17,
+   "verdict": "ok"
+  },
+  "I3JlOcJTo2A": {
+   "id": "I3JlOcJTo2A",
+   "title": "3 questions that expose GTA VI traffic math?",
+   "published": "2026-10-19",
+   "dur": 20,
+   "motion": 48.16,
+   "verdict": "ok"
+  },
+  "YrfkAIdXPug": {
+   "id": "YrfkAIdXPug",
+   "title": "The Golden Ratio: Nature's Favorite Number",
+   "published": "2026-10-19",
+   "dur": 40,
+   "motion": 27.29,
+   "verdict": "ok"
+  },
+  "NOWH5wYtH_w": {
+   "id": "NOWH5wYtH_w",
+   "title": "The Quadratic Formula, Explained",
+   "published": "2026-10-19",
+   "dur": 45,
+   "motion": 22.13,
+   "verdict": "ok"
+  },
+  "xs-HQeEtUkc": {
+   "id": "xs-HQeEtUkc",
+   "title": "How Fast Do Colliding Objects Lose Energy?",
+   "published": "2026-10-18",
+   "dur": 13,
+   "motion": 43.77,
+   "verdict": "ok"
+  },
+  "eDCubAz8iHs": {
+   "id": "eDCubAz8iHs",
+   "title": "What Makes a Superhabitable Planet?",
+   "published": "2026-10-18",
+   "dur": 13,
+   "motion": 43.31,
+   "verdict": "ok"
+  },
+  "fJFrmHGx130": {
+   "id": "fJFrmHGx130",
+   "title": "The Most Beautiful Equation in Math",
+   "published": "2026-10-18",
+   "dur": 13,
+   "motion": 46.54,
+   "verdict": "ok"
+  },
+  "XweXQ0h_u-Y": {
+   "id": "XweXQ0h_u-Y",
+   "title": "How Computers Count in 0s and 1s",
+   "published": "2026-10-18",
+   "dur": 15,
+   "motion": 43.4,
+   "verdict": "ok"
+  },
+  "BPX92G43rrs": {
+   "id": "BPX92G43rrs",
+   "title": "4 signs a data centre survives earthquakes",
+   "published": "2026-10-18",
+   "dur": 24,
+   "motion": 47.89,
+   "verdict": "ok"
+  },
+  "y9w7vTgP1KE": {
+   "id": "y9w7vTgP1KE",
+   "title": "3 reasons robotaxi queues explode",
+   "published": "2026-10-18",
+   "dur": 14,
+   "motion": 47.77,
+   "verdict": "ok"
+  },
+  "6CMCvPyeMWg": {
+   "id": "6CMCvPyeMWg",
+   "title": "The Pythagorean Theorem, Explained Visually",
+   "published": "2026-10-18",
+   "dur": 13,
+   "motion": 52.43,
+   "verdict": "ok"
+  },
+  "panIJ9ia7CQ": {
+   "id": "panIJ9ia7CQ",
+   "title": "Pythagorean Triples: Whole-Number Right Triangles",
+   "published": "2026-10-17",
+   "dur": 46,
+   "motion": 21.84,
+   "verdict": "ok"
+  },
+  "aiIzeSE98bg": {
+   "id": "aiIzeSE98bg",
+   "title": "2 rules that cut Mega Millions odds by 99%",
+   "published": "2026-10-17",
+   "dur": 20,
+   "motion": 44.59,
+   "verdict": "ok"
+  },
+  "AEaVcgRcJ4I": {
+   "id": "AEaVcgRcJ4I",
+   "title": "3 things that make the Verizon iPhone handoff 99% seamless",
+   "published": "2026-10-17",
+   "dur": 21,
+   "motion": 40.1,
+   "verdict": "ok"
+  },
+  "3o_BjLNeaEg": {
+   "id": "3o_BjLNeaEg",
+   "title": "7 appears with three LEDs",
+   "published": "2026-10-17",
+   "dur": 13,
+   "motion": 41.83,
+   "verdict": "ok"
+  },
+  "SH6-aHl4IbA": {
+   "id": "SH6-aHl4IbA",
+   "title": "Mean vs Median vs Mode",
+   "published": "2026-10-17",
+   "dur": 40,
+   "motion": 22.58,
+   "verdict": "ok"
+  },
+  "wWcxjRRqSNk": {
+   "id": "wWcxjRRqSNk",
+   "title": "What Is a Derivative? A Simple Explanation",
+   "published": "2026-10-16",
+   "dur": 50,
+   "motion": 18.92,
+   "verdict": "ok"
+  },
+  "tum35fpuVlA": {
+   "id": "tum35fpuVlA",
+   "title": "2 network failures that halt data instantly",
+   "published": "2026-10-16",
+   "dur": 22,
+   "motion": 38.48,
+   "verdict": "ok"
+  },
+  "sVHDMAIw4no": {
+   "id": "sVHDMAIw4no",
+   "title": "Dead",
+   "published": "2026-10-03",
+   "dur": 30,
+   "motion": 49.85,
+   "verdict": "ok"
+  },
+  "C57KHu_dXfk": {
+   "id": "C57KHu_dXfk",
+   "title": "Akazai",
+   "published": "2026-09-22",
+   "dur": 19,
+   "motion": 57.45,
+   "verdict": "ok"
+  },
+  "IjI5kae9eSE": {
+   "id": "IjI5kae9eSE",
+   "title": "Poobon",
+   "published": "2026-09-20",
+   "dur": 72,
+   "motion": null,
+   "verdict": "?"
+  },
+  "TMgdscw-MaI": {
+   "id": "TMgdscw-MaI",
+   "title": "Jawead",
+   "published": "2026-09-20",
+   "dur": 34,
+   "motion": 73.99,
+   "verdict": "ok"
+  },
+  "E9rAq-bL-R0": {
+   "title": "WLAN wird langsamer durch Wände",
+   "dur": 18,
+   "published": "2026-11-04",
+   "motion": 47.32,
+   "verdict": "ok"
+  },
+  "BR5QLwvcwnY": {
+   "dur": 17,
+   "motion": 47.40079365079365,
+   "verdict": "ok",
+   "at": "2026-11-05T18:02:38Z"
+  },
+  "lgozvUoXQgQ": {
+   "title": "Thermosbecher hält Kaffee heiß",
+   "dur": 16,
+   "published": "2026-11-02",
+   "motion": 51.75,
+   "verdict": "ok"
+  },
+  "hxO3plo3TNo": {
+   "title": "How 7‑segment displays make 64 symbols",
+   "dur": 16,
+   "published": "2026-10-25",
+   "motion": 51.69,
+   "verdict": "ok"
+  },
+  "bo_T4XayIEk": {
+   "title": "When a Formula 1 race hits 80 % fuel load it slows",
+   "dur": 24,
+   "published": "2026-10-25",
+   "motion": 40.82,
+   "verdict": "ok"
+  },
+  "OtqpIfFdxCE": {
+   "title": "Chelsea‑Spurs: What is a Poisson distribution, really?",
+   "dur": 23,
+   "published": "2026-10-24",
+   "motion": 45.91,
+   "verdict": "ok"
+  },
+  "fPHw7EO1EUw": {
+   "title": "2‑digit palindrome = sum of squares",
+   "dur": 15,
+   "published": "2026-10-24",
+   "motion": 44.05,
+   "verdict": "ok"
+  },
+  "kn9vRzgiZcs": {
+   "title": "Why Vincent Kompany’s jersey number beats the odds",
+   "dur": 18,
+   "published": "2026-10-23",
+   "motion": 47.58,
+   "verdict": "ok"
+  },
+  "S1CQcfL4NLw": {
+   "title": "When a traffic jam hits 30 cars it stalls",
+   "dur": 17,
+   "published": "2026-10-23",
+   "motion": 46.04,
+   "verdict": "ok"
+  },
+  "fSOZO0gnsZY": {
+   "title": "2‑point collision shockwave",
+   "dur": 13,
+   "published": "2026-10-23",
+   "motion": 49.93,
+   "verdict": "ok"
+  },
+  "2EcpyNPPfWY": {
+   "title": "3 stats behind Bo Nix’s rookie season",
+   "dur": 17,
+   "published": "2026-10-22",
+   "motion": 50.54,
+   "verdict": "ok"
+  },
+  "Xx2aw083Bm0": {
+   "title": "3 safety tricks that keep Graz’s trams running",
+   "dur": 13,
+   "published": "2026-10-22",
+   "motion": 53.99,
+   "verdict": "ok"
+  },
+  "QWG-W5ZSD70": {
+   "title": "2 signs a 4‑digit square hides in Pi",
+   "dur": 12,
+   "published": "2026-10-21",
+   "motion": 46.85,
+   "verdict": "ok"
+  },
+  "MXFOkDcPTwQ": {
+   "title": "3 clues hidden in today’s Final Jeopardy answer",
+   "dur": 23,
+   "published": "2026-10-20",
+   "motion": 44.07,
+   "verdict": "ok"
+  },
+  "udzIUXLn4vM": {
+   "title": "2‑digit binary flip loop",
+   "dur": 14,
+   "published": "2026-10-19",
+   "motion": 47.43,
+   "verdict": "ok"
+  },
+  "dh1onbk1EaQ": {
+   "title": "2 rules that keep Arsenal’s attack efficient",
+   "dur": 18,
+   "published": "2026-10-18",
+   "motion": 47.77,
+   "verdict": "ok"
+  },
+  "H7rC4dxacsM": {
+   "title": "Why the Area of a Circle is πr²",
+   "dur": 52,
+   "published": "2026-10-17",
+   "motion": 28.45,
+   "verdict": "ok"
+  },
+  "CZoeOTYubOc": {
+   "title": "Amazon Stock Crash: Hidden Buying Signal for Wealth Builders",
+   "dur": 458,
+   "published": "2026-10-17",
+   "motion": 23.64,
+   "verdict": "ok"
+  },
+  "bAcICSz7W08": {
+   "title": "How the Rich Build Wealth with Boring Index Funds",
+   "dur": 511,
+   "published": "2026-10-17",
+   "motion": 15.13,
+   "verdict": "ok"
+  },
+  "KOGCyjyzSwA": {
+   "title": "Paying Yourself First: The Brain Hack That Builds Wealth",
+   "dur": 448,
+   "published": "2026-10-17",
+   "motion": 18.81,
+   "verdict": "ok"
+  },
+  "VThRPSG5RWk": {
+   "title": "Robo‑Advisor Fees Are Killing Your Gains – Fix It Fast",
+   "dur": 544,
+   "published": "2026-10-17",
+   "motion": 17.59,
+   "verdict": "ok"
+  },
+  "3C0bpIZu8L8": {
+   "title": "The IPO Trap: How to Turn New Stock Offerings into Real Gains",
+   "dur": 532,
+   "published": "2026-10-17",
+   "motion": 17.75,
+   "verdict": "ok"
+  },
+  "fPnAmg8wliU": {
+   "title": "The Two-Week Rule: Trick Your Brain Into Spending Less",
+   "dur": 467,
+   "published": "2026-10-17",
+   "motion": 13.38,
+   "verdict": "ok"
+  },
+  "7CRlhkLvLqc": {
+   "title": "The 1% Return Trick: How Tiny Gains Explode Over Decades",
+   "dur": 569,
+   "published": "2026-10-17",
+   "motion": 17.97,
+   "verdict": "ok"
+  },
+  "UNYNsRNUSBE": {
+   "title": "4 reasons the F‑35’s speed challenges physics",
+   "dur": 25,
+   "published": "2026-10-16",
+   "motion": 41.14,
+   "verdict": "ok"
+  },
+  "VX4z2sRiFMo": {
+   "title": "2 signs a hospital’s waiting time is mathematically inefficient",
+   "dur": 18,
+   "published": "2026-10-16",
+   "motion": 45.02,
+   "verdict": "ok"
+  },
+  "M1pw-U3OD9w": {
+   "title": "3 numbers behind Disney’s Halloween McDonald’s Buckets",
+   "dur": 23,
+   "published": "2026-10-16",
+   "motion": 40.24,
+   "verdict": "ok"
+  },
+  "E8qNCebzPI8": {
+   "title": "What Is π, Really?",
+   "dur": 46,
+   "published": "2026-10-16",
+   "motion": 20.22,
+   "verdict": "ok"
+  },
+  "hB5-j_vzEOw": {
+   "title": "👁",
+   "dur": 25,
+   "published": "2026-09-29",
+   "motion": 30.61,
+   "verdict": "ok"
+  },
+  "5N4R3EmhvgQ": {
+   "title": "Why the Moon Grows on the Horizon? The Surprising Reason!",
+   "dur": 82,
+   "motion": 43.98,
+   "verdict": "ok"
+  },
+  "7tEVH7XIwJ8": {
+   "title": "Warum ist der Mittagsschatten so kurz?",
+   "dur": 13,
+   "motion": 48.72,
+   "verdict": "ok"
+  },
+  "8flbmnP3_Ns": {
+   "title": "What turns a crime spike into a logistic curve",
+   "dur": 15,
+   "motion": 51.62,
+   "verdict": "ok"
+  },
+  "9gd7G-KgJSw": {
+   "title": "Voynich Manuscript: The Oldest Unscrambled Code?",
+   "dur": 77,
+   "motion": 91.51,
+   "verdict": "ok"
+  },
+  "BV0C9EJTUTU": {
+   "dur": 74,
+   "motion": 0.0,
+   "verdict": "STATIC",
+   "at": "2026-11-05T18:02:03Z"
+  },
+  "EOjFHekliMU": {
+   "title": "Wie wirkt Inflation auf dein Sparkonto?",
+   "dur": 16,
+   "motion": 51.51,
+   "verdict": "ok"
+  },
+  "GFW5QIUzSU0": {
+   "title": "Slice a Circle, Get a Rectangle",
+   "dur": 52,
+   "motion": 23.05,
+   "verdict": "ok"
+  },
+  "HuVVWOwCy-I": {
+   "title": "Novak Djokovic vs Rafael Nadal: the spin factor",
+   "dur": 19,
+   "motion": 47.65,
+   "verdict": "ok"
+  },
+  "IMQMzpkcLq8": {
+   "title": "What turns a train derailment into a massive fire",
+   "dur": 17,
+   "motion": 47.43,
+   "verdict": "ok"
+  },
+  "IdQqiHusN54": {
+   "title": "The Formula Behind Every Parabola",
+   "dur": 45,
+   "motion": 25.55,
+   "verdict": "ok"
+  },
+  "Ii64OHOzXdI": {
+   "title": "Percentages: The Math You Use Every Day",
+   "dur": 45,
+   "motion": 24.51,
+   "verdict": "ok"
+  },
+  "OTOkrzoiF1E": {
+   "title": "Dyrroth",
+   "dur": 626,
+   "motion": 25.18,
+   "verdict": "ok"
+  },
+  "OdonrgVZMtk": {
+   "title": "Hoher Zins = gutes Angebot?",
+   "dur": 16,
+   "motion": 47.25,
+   "verdict": "ok"
+  },
+  "R5BstFUch-4": {
+   "title": "The resonance that shatters glass",
+   "dur": 13,
+   "motion": 48.12,
+   "verdict": "ok"
+  },
+  "RkKLAgH3yuY": {
+   "title": "Numbers: 3 clues to the golden ratio",
+   "dur": 21,
+   "motion": 44.2,
+   "verdict": "ok"
+  },
+  "Rw-yVLLPSF4": {
+   "title": "Warum ist der Kühlschrank hinten warm?",
+   "dur": 14,
+   "motion": 51.55,
+   "verdict": "ok"
+  },
+  "Sdh6QFI27gU": {
+   "title": "Untitled",
+   "dur": 30,
+   "motion": 82.44,
+   "verdict": "ok"
+  },
+  "SiecI-PkVmM": {
+   "title": "The exponential decay that empties a battery",
+   "dur": 25,
+   "motion": 49.57,
+   "verdict": "ok"
+  },
+  "W0rL1I3jhGA": {
+   "title": "When the NFL trade deadline hits zero days left, deals explode",
+   "dur": 18,
+   "motion": 47.95,
+   "verdict": "ok"
+  },
+  "WlI5J0JIw6Q": {
+   "title": "The Slope at a Single Point",
+   "dur": 50,
+   "motion": 20.8,
+   "verdict": "ok"
+  },
+  "XGIXvjuaW_M": {
+   "title": "Why Computers Only Know Two Numbers",
+   "dur": 46,
+   "motion": 24.15,
+   "verdict": "ok"
+  },
+  "YB925FU_1cc": {
+   "title": "3 Borders That Shouldn't Exist — And Why They Never Changed",
+   "dur": 585,
+   "motion": 9.02,
+   "verdict": "ok"
+  },
+  "YvpjKLa0RW0": {
+   "title": "When Houston heat hits 95°F power fails",
+   "dur": 15,
+   "motion": 50.53,
+   "verdict": "ok"
+  },
+  "_Kyo34GO5jU": {
+   "title": "3 ways a viral video multiplies views",
+   "dur": 20,
+   "motion": 48.5,
+   "verdict": "ok"
+  },
+  "eL8AyUsucow": {
+   "title": "2 photons tunnel instantly",
+   "dur": 14,
+   "motion": 45.68,
+   "verdict": "ok"
+  },
+  "gWCE8XmLBqQ": {
+   "title": "🙂",
+   "dur": 50,
+   "motion": 30.94,
+   "verdict": "ok"
+  },
+  "k3uZcvFRamY": {
+   "title": "How a stock market fails: its last 4 stages",
+   "dur": 18,
+   "motion": 50.35,
+   "verdict": "ok"
+  },
+  "nSGmqFWX6rg": {
+   "title": "The Mexican Peso: From Colonial Roots to Modern Economy",
+   "dur": 19,
+   "motion": 91.44,
+   "verdict": "ok"
+  },
+  "qTdkt6868BE": {
+   "title": "27 steps that lock the Collatz loop",
+   "dur": 15,
+   "motion": 47.3,
+   "verdict": "ok"
+  },
+  "r6EA0kA5_Vc": {
+   "dur": 56,
+   "motion": 0.0,
+   "verdict": "STATIC",
+   "at": "2026-11-05T18:02:04Z"
+  },
+  "rL823bSJIUU": {
+   "dur": 67,
+   "motion": 0.0,
+   "verdict": "STATIC",
+   "at": "2026-11-05T18:02:05Z"
+  },
+  "ut4VHDjJc34": {
+   "dur": 59,
+   "motion": 0.0,
+   "verdict": "STATIC",
+   "at": "2026-11-05T18:02:06Z"
+  },
+  "vD3BaNPuPik": {
+   "title": "Why Robinhood still beats traditional brokers",
+   "dur": 19,
+   "motion": 50.9,
+   "verdict": "ok"
+  },
+  "vDYCIY2R5Mk": {
+   "title": "Why Did Brazil Stay One Country While Spanish America Split Into 18?",
+   "dur": 565,
+   "motion": 7.35,
+   "verdict": "ok"
+  },
+  "wUIUqcV83w4": {
+   "title": "Disney's New Magic Reveal: What Fans Need to Know",
+   "dur": 74,
+   "motion": 90.42,
+   "verdict": "ok"
+  },
+  "xhR5idibibA": {
+   "title": "Measuring a Circle With a Piece of String",
+   "dur": 46,
+   "motion": 22.59,
+   "verdict": "ok"
+  },
+  "xOKRhK-Ms-A": {
+   "dur": 0,
+   "motion": null,
+   "verdict": "STATIC",
+   "title": "unknown (0s broken upload)"
+  },
+  "uONRcial5tg": {
+   "dur": 543,
+   "motion": 0.0,
+   "verdict": "STATIC",
+   "title": "Master BSTs in 10 Minutes – Insert, Delete & Balance Made Simple!"
+  },
+  "-zwquNrpCQM": {
+   "dur": 540,
+   "motion": 5.167714884696017,
+   "verdict": "ok",
+   "title": "Sorting Algorithms Visualised: Bubble to Quicksort"
+  },
+  "znx6t01GliQ": {
+   "dur": 523,
+   "motion": 5.17120894479385,
+   "verdict": "ok",
+   "title": "How an Attacker Maps Your Network in 60 Seconds — and What the Logs Show"
+  },
+  "WQ_n3GVLIqc": {
+   "dur": 535,
+   "motion": 5.244584206848358,
+   "verdict": "ok",
+   "title": "The Operating System: Every Program's Referee"
+  },
+  "_edvPsGgsj8": {
+   "dur": 592,
+   "motion": 5.296995108315863,
+   "verdict": "ok",
+   "title": "What Programming Is: From Text to Running Code"
+  },
+  "ctISb-cfbTU": {
+   "dur": 617,
+   "motion": 5.359888190076869,
+   "verdict": "ok",
+   "title": "What Is IT, Really? The 2-Minute Truth"
+  },
+  "XuP_xIU2vbE": {
+   "dur": 538,
+   "motion": 5.496156533892383,
+   "verdict": "ok",
+   "title": "How the Internet Moves Your Data (Packets Explained)"
+  },
+  "pTxy9biMLBo": {
+   "dur": 451,
+   "motion": 5.936408106219427,
+   "verdict": "ok",
+   "title": "Binary Search Trees & Balancing, Explained"
+  },
+  "eQc5npKADLw": {
+   "dur": 481,
+   "motion": 6.226415094339623,
+   "verdict": "ok",
+   "title": "Big-O Notation, Explained Visually"
+  },
+  "7j8P7yil9Yk": {
+   "dur": 544,
+   "motion": 7.044025157232705,
+   "verdict": "ok",
+   "title": "Virtualisation & Cloud: Many Computers in One"
+  },
+  "w2U6_A8cPx0": {
+   "dur": 446,
+   "motion": 7.962962962962964,
+   "verdict": "ok",
+   "title": "The $6.3 Billion Hot Wallet Breach: How One Laptop Drained Binance"
+  },
+  "0wO5P846PVE": {
+   "dur": 620,
+   "motion": 8.46261355695318,
+   "verdict": "ok",
+   "title": "CPU vs RAM vs Storage - How Your Computer Really Thinks"
+  },
+  "trc4ILR02T4": {
+   "dur": 559,
+   "motion": 8.878406708595389,
+   "verdict": "ok",
+   "title": "Files, Storage & Backups: Never Lose Data Again"
+  },
+  "xIQR_PZLi2k": {
+   "dur": 11,
+   "motion": 17.30048500881834,
+   "verdict": "ok",
+   "title": "How Fast Is a Katana Slash?"
+  },
+  "FPDTlpyXseQ": {
+   "dur": 512,
+   "motion": 17.795248078266944,
+   "verdict": "ok",
+   "title": "A 75-Cent Error Exposed a KGB Spy"
+  },
+  "egxaqbFydjU": {
+   "dur": 527,
+   "motion": 21.94269741439553,
+   "verdict": "ok",
+   "title": "The Machine That Said It Was Fine"
+  },
+  "yLcHI0_HPNQ": {
+   "dur": 26,
+   "motion": 39.47420634920635,
+   "verdict": "ok",
+   "title": "3 ways data centers survive Japan earthquakes"
+  },
+  "lZEouTLunFY": {
+   "dur": 25,
+   "motion": 40.18408289241622,
+   "verdict": "ok",
+   "title": "2 signs your hash table is instant"
+  },
+  "i4KvZTIWLuc": {
+   "dur": 23,
+   "motion": 40.995370370370374,
+   "verdict": "ok",
+   "title": "3 steps that make binary search 10× faster"
+  },
+  "Si8rklJN0es": {
+   "dur": 26,
+   "motion": 41.636904761904766,
+   "verdict": "ok",
+   "title": "Cold storage: data locked for decades"
+  },
+  "IEFPlLxdC2A": {
+   "dur": 13,
+   "motion": 42.56834215167549,
+   "verdict": "ok",
+   "title": "3 steps that unwind a recursive call"
+  },
+  "fGUWRkWlzNs": {
+   "dur": 25,
+   "motion": 43.236331569664905,
+   "verdict": "ok",
+   "title": "Derailment: one sensor, whole safety system"
+  },
+  "jml7OzoW1wk": {
+   "dur": 16,
+   "motion": 43.26278659611993,
+   "verdict": "ok",
+   "title": "Why does a coffee shop queue use a hash table?"
+  },
+  "AvlUrNXbuEM": {
+   "dur": 26,
+   "motion": 43.36970899470899,
+   "verdict": "ok",
+   "title": "How US military 90‑day survival strategy powers recursion"
+  },
+  "6Zb7BIEd8vA": {
+   "dur": 23,
+   "motion": 44.40917107583775,
+   "verdict": "ok",
+   "title": "NASCAR: one lap, whole leaderboard"
+  },
+  "zrZrUUQujuU": {
+   "dur": 23,
+   "motion": 44.66820987654321,
+   "verdict": "ok",
+   "title": "How load‑balancing keeps Apple’s new servers humming"
+  },
+  "lKs8lVFBUFo": {
+   "dur": 25,
+   "motion": 44.69686948853616,
+   "verdict": "ok",
+   "title": "Binary search finds the nearest rescue vessel"
+  },
+  "N3Qn-adlzRI": {
+   "dur": 27,
+   "motion": 45.56216931216931,
+   "verdict": "ok",
+   "title": "Can encryption stop a healthcare marketplace data leak?"
+  },
+  "Dl2TRCOuiA4": {
+   "dur": 26,
+   "motion": 46.13977072310406,
+   "verdict": "ok",
+   "title": "When cache hits drop below 70% performance stalls"
+  },
+  "wR9zIUics4Y": {
+   "dur": 24,
+   "motion": 46.36243386243386,
+   "verdict": "ok",
+   "title": "Rescue Route Graph"
+  },
+  "U9UcuckXnQk": {
+   "dur": 25,
+   "motion": 46.93121693121693,
+   "verdict": "ok",
+   "title": "What a stock surge teaches about database indexing"
+  },
+  "ONlqPiU_FB0": {
+   "dur": 27,
+   "motion": 47.00837742504409,
+   "verdict": "ok",
+   "title": "3 ways binary search beats linear scan"
+  },
+  "t4WxPVlzQAI": {
+   "dur": 23,
+   "motion": 47.01168430335097,
+   "verdict": "ok",
+   "title": "How a Windows update powers recursion"
+  },
+  "u0KJeDljr20": {
+   "dur": 29,
+   "motion": 47.670855379188716,
+   "verdict": "ok",
+   "title": "Where AI improves player stats through feedback"
+  },
+  "Bd0imuHIIIo": {
+   "dur": 26,
+   "motion": 47.8097442680776,
+   "verdict": "ok",
+   "title": "How ranking algorithms decide Valkyries vs Dream"
+  },
+  "Uer3DyhddN0": {
+   "dur": 23,
+   "motion": 47.94753086419753,
+   "verdict": "ok",
+   "title": "Steelers record: one data structure, all seasons"
+  },
+  "pefppsggmoE": {
+   "dur": 25,
+   "motion": 48.295855379188716,
+   "verdict": "ok",
+   "title": "2 reasons hash tables prevent duplicate usernames"
+  },
+  "VPQqL1KxWGQ": {
+   "dur": 26,
+   "motion": 49.307760141093475,
+   "verdict": "ok",
+   "title": "GitHub outage: one server, millions of repos"
+  },
+  "Ry9f3EOR7-k": {
+   "dur": 19,
+   "motion": 49.779541446208114,
+   "verdict": "ok",
+   "title": "How a Laptop Drained $6.3 Billion From Binance"
+  },
+  "RwTIk_xA5n4": {
+   "dur": 26,
+   "motion": 53.52182539682539,
+   "verdict": "ok",
+   "title": "Can a single football injury reveal how binary search works?"
+  },
+  "ixGjobn9EMI": {
+   "dur": 25,
+   "motion": 55.69113756613756,
+   "verdict": "ok",
+   "title": "What makes alien sighting databases instantly searchable"
+  },
+  "yqiBTZPCE0c": {
+   "dur": 24,
+   "motion": 56.26984126984127,
+   "verdict": "ok",
+   "title": "how the SolarWinds hack exposed 18,000 servers"
+  },
+  "8EP10vGfSnY": {
+   "dur": 21,
+   "motion": 45.15983245149911,
+   "verdict": "ok",
+   "title": "Can a busy chili kitchen handle thousands of orders simultaneously?"
+  },
+  "0EkkgBJ0yMg": {
+   "dur": 21,
+   "motion": 51.367945326278665,
+   "verdict": "ok",
+   "title": "Concurrency: two requests can freeze a server"
+  },
+  "i9yhLLQck78": {
+   "dur": 27,
+   "motion": 46.782407407407405,
+   "verdict": "ok",
+   "title": "3 steps that automate school building inspections"
+  },
+  "IGxt0aISp0I": {
+   "dur": 23,
+   "motion": 48.229717813051145,
+   "verdict": "ok",
+   "title": "What compresses a 100 GB game into a 20 GB preload"
+  },
+  "C2vuXYuaEDg": {
+   "dur": 471,
+   "motion": 5.244584206848358,
+   "verdict": "ok",
+   "title": "The One-Line Bug That Broke Half the Internet"
+  },
+  "2stMxGZYowQ": {
+   "dur": 523,
+   "motion": 28.067784765897976,
+   "verdict": "ok",
+   "title": "The Update That Broke the World"
+  },
+  "-HzccnGAhnc": {
+   "dur": 29,
+   "motion": 44.1060405643739,
+   "verdict": "ok",
+   "title": "Why latency above 2 seconds ruins live sports streams"
+  },
+  "0DLxh2ua7BQ": {
+   "dur": 23,
+   "motion": 42.87698412698413,
+   "verdict": "ok",
+   "at": "2026-11-05T18:01:49Z"
+  },
+  "ORl0gK0HUIY": {
+   "dur": 21,
+   "motion": 44.73765432098765,
+   "verdict": "ok",
+   "at": "2026-11-05T18:01:52Z"
+  },
+  "oiHWzdiswns": {
+   "dur": 23,
+   "motion": 47.21009700176367,
+   "verdict": "ok",
+   "at": "2026-11-05T18:01:55Z"
+  },
+  "P_j6ObyyqMU": {
+   "dur": 520,
+   "motion": 5.122292103424178,
+   "verdict": "ok",
+   "at": "2026-11-05T18:01:58Z"
+  },
+  "zWk8_SvrQOQ": {
+   "dur": 43,
+   "motion": 25.180776014109345,
+   "verdict": "ok",
+   "at": "2026-11-05T18:02:02Z"
+  }
+ }
+}

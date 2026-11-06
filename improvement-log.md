@@ -286,3 +286,127 @@ Deliverable `math-videos/out/katana_v37_short.mp4` (9.3 s, 1080x1920).
 - **Next gap:** the hilt-root flare still blooms over the guard ("the sword appears to erupt from a glowing blob"), and the payoff still holds ~3 s of a completely still frame before the bumper (named by
   the v36 run and still open) — a kinetic beat INSIDE the hold, built to `Restore()` exactly.
 - Not published: replacing the live katana short is Ahmad's call.
+
+## 2026-11-02 — repetition guardian: the 18:00 German line bypassed the palette rotation
+- **Measured on the live feed:** DOPEAK's two newest uploads (16:18 trend short, 18:01 German short)
+  both read accent family `blue` (visual_audit: same accent, luma-grid delta 10.4).
+- **Cause:** `trend-radar/de_line.py` called `build_concept.build()` directly and never called
+  `next_concept_seed()` / `apply_palette()`, so the German render used the module DEFAULT palette
+  whatever the 16:00 job had just published. Two pipelines, one channel, one of them not rotating.
+- **Fix:** de_line now consumes the SAME rotation (`next_concept_seed(advance=upload)` +
+  `apply_palette(pseed)` + `build(..., palette_seed=pseed)`) and closes it with
+  `mark_concept_published()` after a successful upload. Dry probe: state `last=3` -> the German
+  short would render palette **4 / accent (255,150,70)**, not palette 0; the probe does not advance
+  the state file.
+- **German title gate widened:** `DE_WINDOW` 4 -> 6. The two "Warum ist …?" titles had both rolled
+  out of a 4-entry window, so `de_line.gate()` allowed a third while the live feed still carried
+  two. Probe: `"Warum ist ein Test?"` now returns `opener 'warum' already used in 2 of the last 5`.
+- **CASE FILE had no dedup at all.** New `case-file/repeat_gate.py` (stopword Jaccard, threshold
+  0.34) is called by `upload_episode.py` before upload; `--force` overrides. Calibration on the real
+  pair — "The $6.3 Billion Hot Wallet Breach…" vs the live "How a Laptop Drained $6.3 Billion From
+  Binance" = **0.57 → REFUSED**, while the queued titles ("37 Seconds", "The Clock That Drifted",
+  "The Update That Broke the World", "Eight Minutes of Runaway") score 0.00.
+- **Guardian gained `check_visual()`** (section 1n) so a same-accent pair between two different
+  pipelines is measured every run instead of only when someone runs visual_audit by hand.
+- **Still open (needs Ahmad):** the two live ALGORHYTHM videos on the Binance story
+  (`w2U6_A8cPx0` 7m26s longform + `Ry9f3EOR7-k` 19s short) — titles differ, so the standing
+  duplicate-delete approval does not cover it.
+
+## 2026-11-04 (10:00 UTC) — (b) notes: the referent now lands on its own word
+
+Format worked: **Aesthetic study notes** (`math-videos/aesthetic_notes.py`, format 2 of 3).
+Deliverable `math-videos/out/notes_v23_short.mp4` (32.35 s, 1080x1920, same script as the live
+discriminant page — a re-render, not a new topic). Detail: `references/notes-referent-beat.md`.
+
+- **Defect (measured):** beat 1 held **5.11 s** with ONE ink event (the formula swipe stamped at the
+  boundary). The narration says *"nobody knows what the part under the root does"* at **t = 5.12**
+  and nothing on the page picked that part out — four still seconds in the first third of a Short.
+- **Change (one device):** `frame(step, ring=<mute>)` is a new sub-beat state; `main()` resolves the
+  word from `plan["words"]`, SPLITS the concat entry there, and the cover's own referent ring inks
+  on it. Verified on the finished file: ring pixels 0 at 5.05 s → **3,622 at 5.2 s**, held to the end
+  of the beat, absent from beat 2 on.
+- **Score before → after (feed size, 405 px):** reveal frame **8/10 → 8.5–9/10** ("the sentence lands
+  with no audio … consider the frame ready to ship"); the definition beat and the payoff frame read
+  **9/10** because the ring is deliberately NOT persisted.
+- **Two rejections, both measured:** persisting the ring through beat 6 → **7.5/10** at the definition
+  beat ("redundant, competing emphasis with the newly revealed discriminant label") and **3/10 vs
+  9/10** on the payoff frame; ringing only the radicand (`NOTES_RING_SIGN=0`) → cuts the radical's
+  diagonal, "a definite touch/overlap". Both are kill switches now, defaults restored.
+- **Three judge claims that did NOT survive measurement** (don't spend a run on them): third case
+  curve "palest" (curves are at luma parity 61/65/56), captions "below the phone legibility floor"
+  (14.6 / 15.4 px ink height at 405 px wide, floor ≈ 11), ring "reads as a malformed radical" (4×
+  crop calls the same pixels deliberate; ring stroke 6 px vs formula 5 px = 1.20).
+- Gates: `motion 25.81 %`, `COVER_OK`, `BAND_OK`, `HOOK_OK 7.13`, `LOOP_OK 0.00 %`, `AUDIO_OK 18.6 dB`,
+  `aac 48000 Hz 2ch`, duration unchanged at 32.35 s.
+- **Next gap:** the page carries **zero words of the narration on screen for 32 s** — a muted viewer
+  gets the page only. There is no band free for captions (CTA 1728, bar 1846, card ends 1686), so
+  this needs a layout decision, not a caption pass. Also: `faceless-youtube/SKILL.md` is at **106,963
+  chars vs a 100,000 limit**, so `skill_manage(patch)` refuses every edit to it — it must be trimmed
+  ~7 KB before the skill can take another lesson in the body.
+- Not published: replacing the live discriminant upload is Ahmad's call.
+
+## 2026-11-05 — full motion audit of both channels: the static set is EMPTY
+
+Ran the daily upgrade job. `cs-videos/upgrade_static.py --limit 2` → **0 rebuilt**: all 10
+`cs_history.json` titles are already in `upgrade_done.json` (50 live CS videos measured, every one
+`ok`; only `uONRcial5tg` 543 s reads 0.00 % and it stays — an older build of a topic rebuilt under a
+different title, so deleting it is not covered by the standing approval and a rebuild would be a
+third copy). DOPEAK's long-forms all pass (7.35 % / 9.02 % newest two; the 7 from 17 Oct were
+rebuilt and gated at publish).
+
+The useful output was the missing half of the audit: `live_motion_audit_2026-11-04.json` held only
+36 of DOPEAK's 131 uploads, so **86 never-measured uploads** were measured from a FRESH download in
+two passes (`sweep_unmeasured_2026_11_05.py` → `live_motion_sweep_2026-11-05.json` 57 rows;
+`sweep2_unmeasured_2026_11_05.py` → `live_motion_sweep2_2026-11-05.json` 29 rows — the second pass
+exists because the first filtered on `title.isascii()`, which silently skipped 24 real shorts whose
+titles use U+2011/U+2019, plus the 7 long-forms that had never been measured on the LIVE file).
+**Every one reads 13.4-74.0 % motion** — the newest three (4 Nov: Binary Search 45.96 % /
+Pythagoras 32.57 % / Fibonacci 20.33 %) and all seven 17-Oct finance long-forms (13.38-23.64 %)
+included, so the "long-form finance needs a rebuild" branch of this job has nothing left to do.
+
+One reading looked STATIC and was not: `BR5QLwvcwnY` (German, 17 s) returned **-1.00** because
+`_too_short()` in `upgrade_longform_motion.py` (and both sweep scripts) called `/usr/bin/ffprobe`,
+which does not exist on this box (ffprobe is in `/usr/local/bin`); the exception was swallowed, the
+stale 5 s stub was trusted, and the gate read a measurement failure as a static verdict. The same
+file measured **47.40 %** on the full download. Fixed: `shutil.which("ffprobe")` in
+`upgrade_longform_motion.py`, `/usr/local/bin/ffprobe` in both sweeps. This is the second time a
+-1.00 has been reported as STATIC — when a short reads -1.00, measure the whole file before acting.
+
+So the only static videos left in the portfolio are the four 2026-10-13 finance shorts, re-measured
+today from a fresh download and still exactly **0.00 %**: `BV0C9EJTUTU` Inflation's Hidden Bite (74 s),
+`rL823bSJIUU` Dollar-Cost Averaging (67 s), `r6EA0kA5_Vc` The Sunk Cost Trap (56 s),
+`ut4VHDjJc34` Sanctions Shock (59 s). Not rebuilt: the finance line is paused by the owner, they sit
+at 0 views, and each rebuild spends an upload slot that the 13:00 maths cron needs against the
+fresh-channel cap — a 0-view repair that can block a maths short is a net loss. Ahmad's call
+(rebuild, or delete the four and be done with the finance era).
+
+No duplicate normalised titles on either channel (the one "DUP" my scan printed is the regex
+collapsing Persian/emoji titles to an empty key — not a real pair), and no 0-second broken uploads
+live.
+
+## 2026-11-06 (10:00 UTC) — (c) anime: the hair was a ball on a 2 px stalk
+
+Format worked: **Anime physics** (`math-videos/anime_physics.py`, format 3 of 3, the weakest at 6/10).
+Deliverable `math-videos/out/katana_v58_short.mp4` (8.3 s, same narration/topic — a re-render).
+Detail: `references/anime-physics-short.md` → "The hair is a SILHOUETTE problem".
+
+- **Defect (measured, 4x crop of the head):** the bun attached through a *"short, pinched, narrow
+  neck/stalk"*, so the head read as *"a ball on a short stick"*, and the tail was *"a long, rigid,
+  flat strip ... a third, badly positioned limb"*. Geometric cause: bun `r=0.080` TANGENT to the
+  `r=0.170` skull = a **0.011 u (2 px) contact patch**, and a straight 8-point wedge whose end sat
+  0.10 u from the counterweight arm.
+- **Change (one device, additive):** the hair is now ONE curved `ribbon()` lock rooted inside the
+  skull, swelling just past the tie (`bulge 0.65`) with a Gaussian gathered waist (`cinch
+  0.70 @ t 0.18`), forking into three lobes that all stay >= 0.12 u above the shoulder line. The
+  separate bun circle is deleted. Kill switches `ANIME_HAIR=0|1` + four sweep knobs.
+- **Verified, both scales and both orientations:** a 4-up at 3x and at 405 px both ranked
+  old < bulge-only < cinch-0.46 < cinch-0.70; the finished-file pairwise picked the new build in
+  `old|new` **and** in `new|old` ("the split, streaming ends of the ponytail are the decisive cue").
+  Whole-frame cover at feed width **7.5 -> 8.0/10**; figure-mid-slash at feed **8/10**, no merging
+  with the arm, chart or trail.
+- Gates on the finished file: `verify_video` OK (48 kHz stereo, moov@36, motion 57.27 %), `COVER_OK`
+  6.93 vs 8.41, `BAND_OK`, `HOOK_OK 4.49`, `LOOP_OK 1.42 %`, `MOTION_OK 7.90 / min 3.23`, `AUDIO_OK`
+  18.3 dB, -15.0 LUFS. A figure-only change moves HOOK 3.43 -> 4.49.
+- **Next gap:** the COVER's lower chart stack reads as *"template/loading UI"* at 405 px (dashed
+  pending ruler + recessed cheetah capsule). Fix it on the cover only — the payoff keeps the chart.
+- Not published: this is a same-topic rebuild, and replacing a live upload is Ahmad's call.
