@@ -22,14 +22,16 @@
   "burst",
   "stamp",
   "bignum",
-  "chart"
+  "chart",
+  "split",
+  "bignum"
  ],
  "counts": {
   "chart": 4,
   "burst": 4,
   "stamp": 4,
-  "split": 3,
+  "split": 4,
   "poster": 4,
-  "bignum": 4
+  "bignum": 5
  }
 }

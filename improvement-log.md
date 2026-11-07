@@ -410,3 +410,34 @@ Detail: `references/anime-physics-short.md` → "The hair is a SILHOUETTE proble
 - **Next gap:** the COVER's lower chart stack reads as *"template/loading UI"* at 405 px (dashed
   pending ruler + recessed cheetah capsule). Fix it on the cover only — the payoff keeps the chart.
 - Not published: this is a same-topic rebuild, and replacing a live upload is Ahmad's call.
+
+## 2026-11-06 (16:00 UTC) — (a) maths: the closing beat printed numbers nobody said
+
+Format worked: **Manim maths explainer** (`math-videos/discriminant_cover.py`, format 1 of 3).
+Deliverable `math-videos/out/discriminant_v61_short.mp4` (14.7 s, same narration — a re-render).
+
+- **Defect (measured, and named by a blind read before I found the cause):** the closing sentence
+  "Count the crossings: that is the answer." played over an **UNLIT** case row while `D` animated
+  −6 → +8 across 0.90 s on a live readout, so the last second printed **−5, −4, −1, +3 …** — values
+  the narration never names. A read of the 12.4 s frame called it first: *"the discriminant changes
+  unexpectedly from −6 to −5 … it feels like an unfinished reset rather than a satisfying
+  conclusion"*, plus *"none of the three cards is selected as the answer"*. Two defects, one beat.
+- **Change (one device, additive):** the close now COUNTS — cases light in 0.10 s steps (2 → 1 → 0),
+  all three hold lit as the answer SET — and the re-arm to frame 1 runs **after** the value slot has
+  returned to "?": `REV → 0` (0.22 s) → `D.set_value(8)` while the curve is invisible (stroke_opacity
+  0 at REV 0) → medallion fade-in. Kill switch `DISC_CLOSE=0` restores the v60 beat for a same-seed A/B.
+- **Score before → after (blind pairwise, 405 px, same seed, both orientations):** old **6.5 / 5.5**,
+  new **8.0 / 8.5** — the new build won with the new frame on the LEFT and on the RIGHT, so the
+  +2.25 is de-biased. Both reads named the same remaining caveat: with all three tiles gold there is
+  "no uniquely highlighted choice"; one asked for "a clear highlight on 0 roots".
+- **Objective proof the number bug is gone:** 19-frame strip of the equation row (0.2 → 14.2 s) read
+  blind — only `?`, `+8`, `0`, `−6` appear; the old build's own 12.5 s frame printed **−4**. Pixel
+  class also separates the states without OCR: gold px in the value column = "?", green px = digits
+  (13.6 s: 977 green at x 841-946; 14.0/14.2/14.5: gold, 0 green).
+- Gates on the finished file: `verify_video OK` (aac 48 kHz 2ch, moov@36, motion 33.31 %),
+  `MOTION_OK 5.69 / min 2.02`, `COVER_OK 5.98 %`, `BAND_OK 3.16 %`, `HOOK_OK 6.07`,
+  `LOOP_OK 0.67 %`, `AUDIO_OK 17.8 dB`, −14.8 LUFS.
+- **Next gap:** give the end state a UNIQUE emphasis — sweep 2 → 1 → 0, hold the set, then settle
+  the current case (−6 → "0 roots") lit for the final second. Both reads asked for it and it is the
+  one point between 8.25 and the 8.5 bar.
+- Not published: replacing the live discriminant upload is Ahmad's call.

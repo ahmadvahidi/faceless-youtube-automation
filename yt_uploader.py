@@ -34,15 +34,37 @@ CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", "")
 REFRESH_TOKEN = os.environ.get("GOOGLE_REFRESH_TOKEN", "")
 
+# Second channel (ALGORHYTHM). Same OAuth client, its own refresh token, because a
+# refresh token is bound to the Google account that consented — one token can only
+# ever see one channel (the shared token sees DOPEAK only).
+SECOND_TOKEN_FILE = Path("/opt/data/workspace/faceless-youtube/token_second_channel.json")
+CHANNEL_TOKENS = {
+    "UCyjhiQ4Tr_M_qn42B0Vdp3A": SECOND_TOKEN_FILE,   # ALGORHYTHM
+}
+
+
+# Set by a shim module that re-exports this one for a specific channel
+# (cs-videos/yt_uploader.py sets this to ALGORHYTHM).
+DEFAULT_CHANNEL: str | None = None
+
+
+def refresh_token_for(channel_id: str | None = None) -> str:
+    """Refresh token for a channel id, or the default (DOPEAK) one."""
+    channel_id = channel_id or DEFAULT_CHANNEL
+    f = CHANNEL_TOKENS.get(channel_id or "")
+    if f and f.exists():
+        return json.loads(f.read_text())["refresh_token"]
+    return os.environ.get("GOOGLE_REFRESH_TOKEN", "")
+
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 API = "https://www.googleapis.com"
 
 
-def get_access_token() -> str:
+def get_access_token(refresh_token: str | None = None, channel_id: str | None = None) -> str:
     data = urllib.parse.urlencode({
         "client_id": CLIENT_ID,
         "client_secret": CLIENT_SECRET,
-        "refresh_token": REFRESH_TOKEN,
+        "refresh_token": refresh_token or refresh_token_for(channel_id),
         "grant_type": "refresh_token",
     }).encode()
     req = urllib.request.Request(TOKEN_URL, data=data)
