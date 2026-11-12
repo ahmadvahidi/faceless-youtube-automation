@@ -193,7 +193,7 @@ def publish(video_path, title, description, tags=None, privacy="public",
     # an i18n failure must never cost the upload (or look like one).
     try:
         import localize
-        ok, msg = localize.apply_de(vid, title, description, yt_mod=yt)
+        ok, msg = localize.apply_de(vid, title, description, yt_mod=yt, tags=tagset)
         print(f"[i18n] de: {msg}", flush=True)
     except Exception as e:
         print(f"[i18n] skipped for {vid}: {str(e)[:120]}", flush=True)

@@ -102,9 +102,16 @@ def translate_de(title: str, desc: str, yt_mod=None) -> dict | None:
     try:
         import llm_client
         prompt = (
-            "Translate this YouTube Short metadata into natural, idiomatic GERMAN (du-Form, "
+            "Translate this YouTube metadata into natural, idiomatic GERMAN (du-Form, "
             "no literal word-for-word translation, keep any number). Reply with ONLY a JSON "
             "object with the keys title and description.\n\n"
+            "RULES FOR TECHNICAL TERMS: use the established German engineering term, never a\n"
+            "literal rendering of the English word. A literal translation of a technical term is\n"
+            "a factual error, not a style choice.\n"
+            "GLOSSARY: compressor surge = Verdichterpumpen (verb: pumpt, NOT 'surft');\n"
+            "compressor stall = Stroemungsabriss am Verdichter; bleed valve = Zapfluftventil;\n"
+            "stator vane = Leitschaufel; surge line = Pumpgrenze; RAM = Arbeitsspeicher;\n"
+            "hash table = Hashtable; bucket = Bucket; collision = Kollision.\n\n"
             f"TITLE: {title}\n\nDESCRIPTION: {desc[:600]}\n\n"
             'Schema: {"title": "<=70 chars", "description": "<=1200 chars"}')
         raw = llm_client.chat(prompt, max_tokens=1200, temperature=0.4)
@@ -120,13 +127,19 @@ def translate_de(title: str, desc: str, yt_mod=None) -> dict | None:
         t = (out.get("title") or "").strip()
         if not t or len(t) > 100:
             return None
+        # A translator that renders "surges" as "surft" is describing surfing, not a compressor.
+        BAD = ("surft", "surfen", "stallt")
+        if any(b in t.lower() for b in BAD):
+            _log(f"[i18n] refused literal technical term in: {t[:60]}")
+            return None
         return {"title": t, "description": (out.get("description") or "").strip()}
     except Exception as e:  # noqa: BLE001
         _log(f"[i18n] translation unavailable ({str(e)[:100]})")
         return None
 
 
-def apply_de(vid: str, title: str, desc: str, yt_mod, lang: str = "de", force: bool = False):
+def apply_de(vid: str, title: str, desc: str, yt_mod, lang: str = "de", force: bool = False,
+             tags: list | None = None):
     """Set `lang` localisation (+ defaultLanguage) on a live video. Returns (ok, message).
 
     `yt_mod` is the channel's own yt_uploader module — passed in on purpose, because two
@@ -174,8 +187,12 @@ def apply_de(vid: str, title: str, desc: str, yt_mod, lang: str = "de", force: b
             body = {"title": cur_sn["title"], "description": cur_sn["description"],
                     "categoryId": cur_sn.get("categoryId", "27"),
                     "defaultLanguage": cur_sn.get("defaultLanguage") or "en"}
-            if cur_sn.get("tags"):
-                body["tags"] = cur_sn["tags"]
+            # MEASURED 2026-11-12: A02 and D06 shipped with ZERO tags. The read below ran
+            # seconds after upload, saw no tags yet (propagation), and this PUT then wrote a
+            # snippet without them — permanently. The caller's own tagset is the truth.
+            tg = tags or cur_sn.get("tags")
+            if tg:
+                body["tags"] = list(tg)
             yt_mod._api(tok, "/youtube/v3/videos?part=snippet", {"id": vid, "snippet": body},
                         method="PUT")
             return True
